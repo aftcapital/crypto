@@ -8,6 +8,7 @@ class influxT0Pandas():
 
     def __init__(self, market, data_type):
         self.localhost = 'localhost'
+        self.localhost = '172.31.12.166'
         self.port = 8086
 
         self.client = InfluxDBClient(host=self.localhost, port=self.port)
@@ -61,6 +62,7 @@ class influxT0Pandas():
 
 if __name__ == '__main__':
     md = influxT0Pandas(market='binance', data_type='trades')
-    md.connect_to_market()
-    md.get_data
-    md.get_count()
+    md.db_list()
+    # md.connect_to_market()
+    # md.get_data
+    # md.get_count()
