@@ -1,5 +1,5 @@
-from src.getMarketData import getMarketData
-import src.util as util
+from market_data.src.getMarketData import getMarketData
+import market_data.src.util as util
 util.set_logging()
 
 
